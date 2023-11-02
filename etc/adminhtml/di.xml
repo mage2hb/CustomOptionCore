@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--
+/**
+* BSS Commerce Co.
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the EULA
+* that is bundled with this package in the file LICENSE.txt.
+* It is also available through the world-wide-web at this URL:
+* http://mage2hbcommerce.com/Mage2hb-Commerce-License.txt
+*
+* @category   BSS
+* @package    Mage2hb_CustomOptionCore
+* @author     Extension Team
+* @copyright  Copyright (c) 2020-2020 BSS Commerce Co. ( http://mage2hbcommerce.com )
+* @license    http://mage2hbcommerce.com/Mage2hb-Commerce-License.txt
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <virtualType name="Magento\Catalog\Ui\DataProvider\Product\Form\Modifier\Pool">
+        <arguments>
+            <argument name="modifiers" xsi:type="array">
+                <item name="custom-options" xsi:type="array">
+                    <item name="class" xsi:type="string">Mage2hb\CustomOptionCore\Ui\DataProvider\Product\Form\Modifier\Mage2hbCustomOptions</item>
+                    <item name="sortOrder" xsi:type="number">70</item>
+                </item>
+            </argument>
+        </arguments>
+    </virtualType>
+</config>
