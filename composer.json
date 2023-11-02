@@ -1,5 +1,5 @@
 {
-    "name": "mage2hbcommerce/custom-option-core",
+    "name": "mage2hb/custom-option-core",
     "description": "Mage2hb Custom option Core Module",
     "type": "magento2-module",
     "version": "1.0.2",
